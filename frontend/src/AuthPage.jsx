@@ -5,7 +5,7 @@ const AuthPage = (props) => {
       e.preventDefault();
       const { value } = e.target[0];
       axios.post(
-        'https://server-app-l8b9.onrender.com/authenticate',
+        'https://server-app-ycb8.onrender.com/authenticate',
         {username: value}
       )
       .then(r => props.onAuth({...r.data, secret: value }))
